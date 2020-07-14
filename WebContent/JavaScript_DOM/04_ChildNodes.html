@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fun(){
+		var arr = new Array();
+		var div = document.getElementsByTagName("div");
+		arr.push(div[0].nodeName);
+		arr.push(div[0].nodeValue); //div 자체에는 값이 없음
+		arr.push("\n");
+		arr.push(div[0].childNodes[0].nodeName);
+		arr.push(div[0].childNodes[0].nodeValue); // div의 childnode는 text임 = 나는 사과를 좋아합니다.
+		alert(arr);
+		
+		var result=document.getElementById("result");
+		result.style.color="red";
+		result.innerHTML=div[0].childNodes[0].nodeValue;
+		
+	}
+	
+	function sub(){
+		var arr = new Array();
+		var melon = document.getElementById("melon");
+		arr.push(melon.nodeName + "," + melon.nodeValue);
+		arr.push(melon.childNodes.length); //태그사이사이 엔터가 들어감 == 11
+		
+		for(var i=0;i<melon.childNodes.length;i++){
+			//arr.push(melon.childNodes[i].nodeName);
+			arr.push(melon.childNodes[i].childNodes[0].nodeValue); 줄바꿈을 자식으로 읽음
+		}
+		
+		var span=melon.getElementsByTagName("span");
+		for(var i=0;i<span.length;i++){
+			arr.push(span[i].childNodes[0].nodeValue);
+		}
+		
+		alert(arr.join("\n"));		
+	}
+</script>
+</head>
+<body>
+	<div>나는 사과를 좋아합니다.</div>
+	<div id="result"></div>
+	<br/><br/>
+	
+	<input type="button" value="클릭" onclick="fun()">
+	<br/><br/>
+	<span id="melon">  <!-- enter도 #text로나오기 때문에 자식으로 뽑힘 -->
+		<span>가</span> <!-- nodeName=#text, nodeValue="가" -->
+		<span>나</span>
+		<span>다</span>
+	</span>
+	<input type="button" value="클릭" onclick="sub()">
+</body>
+</html>
