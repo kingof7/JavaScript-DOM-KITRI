@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 현재 문서를 HTML 문서로 선언한다. -->
+<!-- 	자바와 html의 비교
+		각 태그는 클래스에 대응 
+		태그는 속성이 있고 키,밸류값으로 구성
+		키는 세터메서드, 밸류는 세팅해주는 값-->
+<!-- 
+		DOMㅡ을 잘해야됨 
+		동적페이지: 페이지이동없이 사이트안에서 이미지나 텍스트가 바뀌는것-->
+<html>
+<head>
+<!-- HTML 문서의 대한 정보 -->
+<!-- meta: 웹페이지나 웹사이트의 개괄적인 설명, 
+				      검색엔진에서 키워드 검색에 사용 단어 나열 
+				      인코딩 -->
+<meta charset="UTF-8">
+<!-- 싱글톤이라 / 생략가능 -->
+<title>글꼴을 제공하는 태그들</title>
+<style>
+	mark {
+		  background-color: gray;
+		  color: black;
+	}
+</style>
+<!-- style, script, link 등을 사용할 수 있다. -->
+</head>
+
+<!-- HTML 문서의 내용 표시 -->
+<body>
+	<!-- h1~h6 까지 있고, 자동 줄바꿈 -->
+	<h3>글꼴 기능을 제공하는 태그들</h3>
+	<h1>H태그에서 글꼴이 가장 크다</h1>
+	<h6>H태그에서 글꼴이 가장 작다.</h6>
+	<h3>Font 태그는 HTML5에서 더이상 지원하지 않는다.</h3>
+	<font size="5" color="#FFB2D9" face="궁서체">점심시간이다</font>
+
+	<h3>글꼴서식</h3> <!-- 줄바꿈 태그 : block // 줄안바뀌는 태그 : inline -->
+	<b>b태그 기능은 볼드체</b><br><br>
+	<i>i태그는 italic체</i><br/><br/> <!-- <tag/> : 싱글 태그라고 한다 -->
+	SUB태그<sub>아래첨자</sub><br><br>
+	<sup>위첨자</sup> SUP 태그 <br/><br/>
+	<ins>밑줄 static</ins><br/><br/>
+	<del>취소</del><br/><br/> <!-- 라인긋기 -->
+	<small>작은글꼴</small><br/><br/>
+	<strong>강조</strong><br/><br/>
+	<mark>음영(형광펜 효과 내기)</mark><br/><br/>
+	
+	
+</body>
+
+</html>

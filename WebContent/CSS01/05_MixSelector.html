@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>혼합 선택자</title>
+<style type="text/css">
+	
+	/*아래로갈수록 우선순위가 높아짐 ->오버라이딩 개념*/
+	font{
+		font-size:18px;
+		color:skyblue;
+	}
+	
+	.show{
+		font-size: 20px;
+	}
+	
+	#disp{
+		font-size: 40px;
+	}
+	
+	#my-font{
+		font-family: 궁서체;
+		
+	}
+	
+</style>
+</head>
+<body>
+	
+	<font class="show" id="disp"> 연습입니다. skyblue (20px, 40px) </font><br/><br/> <!-- class, id같이있을땐 우선순위가 id가 높음 -->
+	
+	<font>class와 id가 같이있으면 id가 더 우선순위가 높습니다.</font><br><br>
+	
+	<!-- 모든 태그는 스타일(style) 속성을 사용할 수 있다. 단 br은 사용 못함 -->
+	
+	<font class="show" id="disp" style="font-size: 9px;">
+	
+	<font class="show"> 연습입니다. 20px, skyblue </font><br/><br/>
+	
+	<font id="disp"> 연습입니다. 40px, skyblue </font><br/><br/>
+	
+	<font class="show" id="my-font"> 연습입니다. 20px, skyblue, 궁서체 </font><br/><br/>
+	
+	<font> 연습입니다(12px, 20px, 40px, 9px), skyblue </font>
+</body>
+</html>
+
+
+

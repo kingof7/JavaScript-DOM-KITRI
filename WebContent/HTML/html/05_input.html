@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input Tag</title>
+</head>
+<body>
+	<h3>INPUT - TYPE</h3>
+	
+	<span>TEXT TYPE</span>
+	<input type="text" name="id" size="8"/><br/><br/> <!-- name은 식별자, 나중에 찾을때 유용함 -->
+	<span>PASSWORD TYPE</span>
+	<input type="password" name="pw"/><br/><br/>
+	
+	<span>RADIO TYPE</span>
+	<input type="radio" name="gender" value="male"/> <!-- value는 진짜 넘어가는 데이터 -->
+	<span>남자</span>
+	
+	<input type="radio" name="gender" value="female"/>
+	<span>여자</span>	
+
+	<br/><br/>
+	
+	<span>좋아하는 과목</span>
+	<input type="checkbox" name="subject" value="java"/>
+	<span>JAVA</span>
+	
+	<input type="checkbox" name="subject" value="jsp"/>
+	<span>JSP</span>
+	
+	<input type="checkbox" name="subject" value="iphone"/>
+	<span>IPHONE</span>
+	<br/><br/>
+	
+	<span>TYPE FILE</span>
+	<input type="file" name="downLoad"/> 
+	<span>TYPE DATE</span>
+	<br><br/>
+	<span>TYPE DATE</span>
+	<input type="date" name="mydate"/>
+	<br><br/>		
+	<span>TYPE COLOR</span>
+	<input type="color" name="mycolor"/>
+	<br><br/>
+	
+	<span>각종 버튼들</span> <!-- 버튼 이게다임 -->
+	<input type="button" value="버튼클릭"/> <!-- 이벤트 직접 만들어줘야됨 : button만 -->
+	<input type="submit" value="전송"/>
+	<input type="reset" value="취소"/>
+	<br><br/>
+	
+	<span>HIDDEN TYPE</span>
+	<input type="text" id="fname" name="fname"/>
+	<input type="hidden" name="myhidden" value="1234"/> <!-- hidden : paging기법, 게시글 글번호 등등 클라이언트에게 보이지 않는 기능 (서버에게 필요)-->
+	<input type="submit" value="제출"/>
+	
+	<h3>그외 태그들</h3>
+	<span>SELECT</span>
+	<select name="fruit1">
+		<option value="apple">사과</option>
+		<option value="banana">바나나</option>
+		<option value="pineapple">파인애플</option>
+	</select>
+	<br><br/>
+	
+	<select name="fruit2">
+		<option value="apple">사과</option>
+		<option value="banana">바나나</option>
+		<option value="pineapple" selected="selected">파인애플</option>
+		<option value="melon">메론</option>
+	</select>
+	
+	<span>TEXT AREA</span>
+	<textarea rows="10" cols="50" name="msg"></textarea>				
+</body>
+</html>

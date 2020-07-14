@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style type="text/css">
+/* 선택자 [attribute] : attribute 속성명이 있는 태그를 선택
+      선택자 [attribute = value] : attribute 값과 value가 일치하는 태그 선택
+      선택자 [attribute != value] : attribute 값과 value가 일치하지 않는 태그 선택 -> jquery
+
+      선택자 [attribute ^= value]: attribute 속성값과 value에 해당하는 문자가 시작하는 태그를 선택 
+      선택자 [attribute $= value]: attribute 속성값과 value에 해당하는 문자가 끝나는 태그를 선택 	
+      선택자 [attribute *= value]: attribute 속성값과 value에 해당하는 문자를 포함하는 태그를 선택
+       
+      선택자 [attribute |= value]: [attribute ^= value] 해당문자 시작하는 태그 versionup 
+      선택자 [attribute ~= value]: [attribute *= value] 해당문자 포함하고 있는 태그 versionup 
+
+*/
+
+ form > input[type]{
+ 	font-size:20px;
+ }
+
+ form > input[type="text"]{ /*입력 받는 텍스트가 파란색*/
+ 	color:red;
+ }
+ 
+ form > input[type="password"]{
+ 	color:blue;
+ }
+ 
+ form > label{
+ 	color:green;
+ 	font-size:30px;
+ }
+ span[id ^= "complex"]{
+ 	color:blue;
+ }
+ span[id $= "text1"]{
+ 	font-size:30px;
+ }
+ span[id *= "t"]{
+ 	background-color: yellow;
+ }
+</style>
+</head>
+<body>
+	<form>
+		<label>이름</label>
+		<input type="text"/><br/>
+		
+		<label>아이디</label> <!-- child node text = 아이디 -->
+		<input type="text"/><br/>
+		
+		<label>비밀번호</label>
+		<input type="password"/><br/>
+		
+		<label>전화번호</label>
+		<input type="tel"/><br/>
+	</form>
+	<br/>
+	
+	<img width="200" height="100" alt="이미지 중입니다."/>
+	<br/>
+	
+	<span id="simpletext1">simpletext1</span>
+	<span id="simpletext2">simpletext2</span>
+	<span id="complextext1">complextext1</span>
+	<span id="complextext2">complextext2</span>
+	<span id="complex">complex</span>
+	<br/><br/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

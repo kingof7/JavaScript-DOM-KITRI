@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+@font-face {
+	font-family: 'fontawesome';
+	src: url('../lib/fonts/fontawesome.eot?14663396#iefix')
+		format('embedded-opentype'),
+		url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+		url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+		url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+	font-style: normal;
+}
+
+.w3-right {
+	font-family: "Segoe UI", Arial, sans-serif;
+	letter-spacing: 4px;
+	float: right;
+	line-height: 37px;
+	padding-right: 20px;
+	font-size: 15px;
+	border: 1px solid red;
+}
+
+.w3-bar-item {
+	padding: 16px;
+}
+
+.w3-bar-item .fa {
+	font-size: 20px;
+}
+
+.menu {
+	border: 1px solid blue;
+	padding-bottom: 41px; color: #fff !important;
+	background-color: #4CAF50 !important;
+}
+
+header {
+	width: 100%;
+	border: 1px solid blue;
+}
+
+header> #header_nav {
+	width: 100%;
+	overflow: hidden;
+}
+
+header> #header_nav .menu li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	padding: 8px 16px;
+	font-size: 17px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	letter-spacing: 4px;
+	border: 1px solid red;
+}
+
+#content {
+	border: 1px solid blue;
+	overflow: hidden;
+	width: 100%;
+}
+
+#content .nav {
+	border: 1px solid red;
+	width: 11%;
+	float: left;
+	height: 5000px;
+}
+
+header>#header_nav .nav li {
+	float: left;
+}
+
+header>#header_nav>.list li {
+	float: left;
+	margin-right: 20px;
+	line-height: 20px;
+}
+
+#content>.nav>div:nth-child(1) ~ div {
+	font-family: "Segoe UI",Arial,sans-serif;
+	padding: 0px 16px;
+}
+
+#content>#display {
+	width: 88.63%;
+	border: 1px solid blue;
+	overflow: hidden;
+}
+
+#html_exam > .html1 {
+	padding: 35.226px;	
+	border: 1px solid red;
+	font-family: "Segoe UI", Arial, sans-serif;
+	display: block;
+	float:left;	
+}
+#css_exam > .css1 {	
+	border: 1px solid red;
+	font-family: "Segoe UI", Arial, sans-serif;
+	display: block;
+	float:left;	
+	
+}
+#js_exam > .js1 {
+	
+	border: 1px solid red;
+	font-family: "Segoe UI", Arial, sans-serif;
+	display: block;
+	float:left;
+	width: 49.99999%;
+	text-align: center!important;
+	box-sizing: inherit;
+	font-size: 15px;
+    line-height: 1.5;
+	
+	}
+	
+.lang{
+	margin: 0px;	
+    background-color: #616161!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.lang .py_box{
+	width: 45%;
+    display: block;
+    float: left;
+    padding: 2.5%;
+    overflow: hidden;
+    text-align: center; 
+      
+}
+.py_box h2{  
+    font-size: 36px !important;
+    font-family:" SegoeUI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;   
+}	
+.py_box input{
+    margin: 5px 5px 5px 0;
+    font-size: 16px;
+    color: #fff!important;
+    background-color: #616161!important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+  }
+.py_box input:hover{
+	color:#000!important;
+	background-color:#fff!important;
+}
+.picker{
+	display: block;
+	padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;    
+}
+.picker > div {
+	text-align: center;	
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;	
+}
+.picker .w3 {
+	padding: 2%;
+	width: 28%;
+	display: block;
+	float: left;	
+}
+.w3 input {	
+	margin: 5px 5px 5px 0;
+    font-size: 16px;
+    color: #fff!important;
+    background-color: #616161!important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+}
+.exercises {
+	color: #fff!important;
+    background-color: #616161!important;
+    overflow: hidden;
+    display: block;
+	padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;    
+    margin: 10px 0;
+    
+} 
+
+</style>
+</head>
+<body>
+	<header>
+		<div id="header_nav">
+			<div>
+				<img src="w3cschool.jpg"
+					style="margin-top: 16px; margin-left: 2px; width: 290px;" />
+				<div class="w3-right" style="position: relative; top: 5px; line-height: 4;">THE
+					WORLD'S LARGEST WEB DEVELOPER SITE</div>
+			</div>
+			<div class="menu">
+				<ul style="padding-left: 0px;">
+					<li>TUTORIALS <img src="trg.JPG"/></li>					
+					<li>REFERENCES<i class="fa fa-caret-down"></i></li>					
+					<li>EXAMPLES<i class="fa fa-caret-down"></i></li>					
+					<li>EXERCISES<i class="fa fa-caret-down"></i></li>					
+					<div class="w3-right">
+						<a class="w3-bar-item" href="javascript:void(0)"
+							onclick="open_search(this)" title="Search W3Schools"><i
+							class="fa"></i></a> <a class="w3-bar-item" href="javascript:void(0)"
+							onclick="open_translate(this)" title="Translate W3Schools"><i
+							class="fa"></i></a> <a class="w3-bar-item" href="javascript:void(0)"
+							onclick="changecodetheme(this)" title="Toggle Dark Code"><i
+							class="fa"></i></a>
+					</div>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+	<div id="content">
+		<div class="nav">
+			<!-- 좌측 nav -->
+			<div style="font-size: 20px; margin: 16px;font-family: "Segoe UI", Arial, sans-serif;">HTML and CSS</div>
+			<!-- 제목 -->
+			<div>HTML and CSS</div>
+			<div>LEARN HTML</div>
+			<div>LEARN CSS</div>
+			<div>LEARN Bootstrap</div>
+			<div>LEARN W3.CSS</div>
+			<div>LEARN Colors</div>
+			<div>LEARN Icons</div>
+			<div>LEARN Graphics</div>
+			<div>LEARN How To</div>
+			<div>LEARN Sass</div>
+
+			<div style="font-size: 20px; margin: 16px; padding: 0px;">JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+		</div>
+		<div id="display">
+			<div id="html_exam" style="border: 1px solid red;  overflow:hidden;">
+				<div class="html1">
+					<h1 style="font-size: 80px;">HTML</h1>
+					<div>The language for building web pages</div>
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+				</div>
+				<div class="html2">
+					<h1 style="font-size: 80px;">HTML</h1>
+					<div>The language for building web pages</div>
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+				</div>								
+			</div>			
+		
+			<div id="css_exam" style="border: 1px solid blue;  overflow:hidden;">
+				<div class="css1">
+					<h3>CSS Example:</h3>
+					<div class="w3-code cssHigh notranslate w3-card-2 w3-border-green"><span class="cssselectorcolor" style="color:brown">
+						body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+						&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+						h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+						&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+						&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+						p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+						&nbsp; font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> verdana<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+						&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+						  </span>
+					</div>
+				</div>
+				<div class="css2" style="padding: 3%">
+					<h1>CSS</h1>
+					<p class="w3-xlarge">The language for styling web pages</p>
+					<a href="/css/default.asp" class="w3-button w3-dark-grey">LEARN
+						CSS</a> <a href="/cssref/default.asp" class="w3-button w3-dark-grey">CSS
+						REFERENCE</a>
+				</div>				
+			</div>
+
+			<div id="js_exam"
+				style="border: 1px solid blue; overflow: hidden; font-family: Verdana, sans-serif; font-size: 15px; line-height: 1.5; display: table; clear:both;">
+				<div class="js1" style=" height: 300px;">
+					<h1 class="w3-jumbo">JavaScript</h1>
+					<p class="w3-xlarge w3-text-dark-grey">The language for
+						programming web pages</p>
+					<a href="/js/default.asp" class="w3-button w3-dark-grey">LEARN
+						JAVASCRIPT</a> <a href="/jsref/default.asp"
+						class="w3-button w3-dark-grey">JAVASCRIPT REFERENCE</a>
+				</div>				
+			</div>
+			</div>
+
+			<div class="sql_exam"></div>
+	
+			<div class="lang">
+				<div class="python">
+					<div class="py_box">
+						<div style="background-color: white; padding: 24px;">
+							<h2>Python</h2>							
+							<h4 style="font-weight: 400; font-size: 20px; margin: 10px;">A programming language</h4>
+							<br/><br/>
+							<input type="submit" value="LEARN PYTHON"/>						
+						</div>
+					</div>
+					<div class="py_box">
+						<div style="background-color: white; padding: 24px;">
+							<h2>PHP</h2>							
+							<h4 style="font-weight: 400; font-size: 20px; margin: 10px;">A web server programming language</h4>
+							<br/><br/>
+							<input type="submit" value="LEARN PHP"/>						
+						</div>
+					</div>
+					<div class="py_box">
+						<div style="background-color: white; padding: 24px;">
+							<h2>jQuery</h2>							
+							<h4 style="font-weight: 400; font-size: 20px; margin: 10px;">A JavaScript library for developing web pages</h4>
+							<br/><br/>
+							<input type="submit" value="LEARN JQUERY"/>						
+						</div>
+					</div>
+					<div class="py_box">
+						<div style="background-color: white; padding: 24px;">
+							<h2>Java</h2>							
+							<h4 style="font-weight: 400; font-size: 20px; margin: 10px;">A programming language</h4>
+							<br/><br/>
+							<input type="submit" value="LEARN JAVA"/>						
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="picker">
+				<div>
+					<div class="w3">
+						<h2 style="font-size: 36px; font-weight: 400;">W3.CSS</h2>
+						<h4 style="font-size: 20px; font-weight: 400;">A modern CSS framework for faster and better responsive web pages</h4>
+						<input type="submit" value="LEARN W3.CSS"/>
+					</div>
+					<div class="w3">
+						<h2 style="font-size: 36px; font-weight: 400;">Color Picker</h2>
+						<img src="https://www.w3schools.com/images/colorpicker.png"/>					
+					</div>
+					<div class="w3">
+						<h2 style="font-size: 36px; font-weight: 400;">Bootstrap</h2>
+						<h4 style="font-size: 20px; font-weight: 400;">A CSS framework for designing better web pages</h4>
+						<input type="submit" value="LEARN BOOTSTRAP 3"/>
+						<input type="submit" value="LEARN BOOTSTRAP 4"/>
+					</div>
+				</div>
+			</div>		
+				
+			<div class="exercises">
+				<h2>Exercises</h2>
+				<h4>Test yourself with exercises</h4>
+			</div>
+	
+			<div class="templates"></div>
+	
+			<div class="how_section"></div>
+	
+			<div class="certifi"></div>
+	
+			<div class="footer"></div>
+			<footer>
+				<!-- 하단 -->
+	
+	
+			</footer>
+			<!-- 하단 -->
+		</div>
+	</div>
+</body>
+</html>

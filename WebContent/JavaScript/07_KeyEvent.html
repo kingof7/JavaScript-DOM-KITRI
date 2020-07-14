@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myFunc(obj){
+		obj.style.color="red";
+	}
+	function myFunc2(){
+		alert("keyUp");
+	}
+	function myFunc3(){
+		alert("keyDown");
+	}
+</script>
+</head>
+<body>
+	<!-- 키 이벤트: keypress(keydown, keyup) -->
+	
+	아이디<input type="text" onkeypress="myFunc(this)"/><br/><br/> <!-- 스크립트에 함수 자동추가기능 없나.. -->
+	비번<input type="text" onkeyup="myFunc2()"/><br/><br/>
+	주소<input type="text" onkeydown="myFunc3()"/><br/><br/>
+</body>
+</html>

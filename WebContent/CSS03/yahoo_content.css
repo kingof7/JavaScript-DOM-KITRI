@@ -1,0 +1,66 @@
+@charset "UTF-8";
+#content{
+	width: 1000px; margin: 0px auto;
+	border: 1px solid red; overflow: hidden;
+}
+#content > #main_nav{
+	float: left; width: 155px;
+	border: 1px solid blue; margin-right: 5px;
+}
+#content > #main_nav li{
+	height: 35px;	
+}
+
+#content > #main{
+	float: left; width: 605px;
+	border: 1px solid blue;
+}
+#content > #main > div{
+	border: 1px solid #CCCCCC;
+	text-align: center;
+}
+
+#content > #main > div:nth-child(1){
+	height: 300px; line-height:300px;
+}
+#content > #main > div:nth-child(2){
+	height: 150px; line-height:150px;
+}
+#content > #main > div:nth-child(3){
+	height: 50px; background-color: #500095; 
+}
+#content > #main > div:nth-child(3) li{
+	float: left;  margin-right: 23px; color: #ffffff;
+	font-size:1.1em;
+}
+
+#content > #main > div:nth-child(3) ~ div{ /*4번째 부터 ~ 마지막까지 선택*/
+	height: 120px; line-height:120px;
+}
+
+#content > #main_banner{
+	float: left; width: 220px;
+	border: 1px solid blue;
+}
+
+#content > #main_banner > div {
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#content > #main_banner > div:nth-child(1){
+	height: 100px; line-height: 100px;
+}
+#content > #main_banner > div:nth-child(2){
+	height: 100px; line-height: 100px;
+}
+#content > #main_banner > div:nth-child(3){
+	height: 150px; line-height: 150px;
+}
+#content > #main_banner > div:nth-child(4){
+	height: 200px; line-height: 200px;
+}
+#content > #main_banner > div:nth-child(5){
+	height: 400px; line-height: 400px;
+}

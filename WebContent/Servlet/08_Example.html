@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>include</h3>
+	<form action="http://localhost:8181/webTesting/com/java/servlet/Example08_" method="get">
+		<label>한줄메시지</label>
+		<input type="text" name="message"/>
+		
+		<input type="submit" name="전송"/>
+		<input type="reset" name="취소"/>
+	</form>
+	
+	<h3>forward</h3> <!-- include보다 많이씀, 안돌아와도 되니까 -->
+	<form action="http://localhost:8181/webTesting/com/java/servlet/Example08_" method="post">
+		<label>한줄메시지</label>
+		<input type="text" name="message"/>
+		
+		<input type="submit" name="전송"/>
+		<input type="reset" name="취소"/>
+	</form>
+</body>
+</html>

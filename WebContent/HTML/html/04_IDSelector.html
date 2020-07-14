@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 선택자</title>
+<style type="text/css">
+
+/*
+id와 class 선택자의 차이가 없다
+	단, js에는 class가 없다
+	
+보통은 id를 기준으로 안으로 들어갈수록 class로 선언해줌
+<div id=".."..>
+	<div class="..."..>
+		<div class="...."....> 
+		...
+*/
+
+	#students1{
+		color:red;
+		font-size:20px;
+		text-decoration:underline;
+	}
+	
+	#students2{
+		color:blue;
+		font-size:2em;
+		font-weight:bold;
+	}
+</style>
+</head>
+<body>	
+	<div>
+		<div id="students1">   
+			<dl>
+				<dt>이름</dt> <!-- dt는 왼쪽정렬 dd는 tap인듯. -->
+				<dd>조인성</dd>
+			</dl>
+			
+			<dl>
+				<dt>학과</dt>
+				<dd>전자과</dd>
+			</dl>
+		</div>
+		
+		<div id="students2">
+			<dl>
+				<dt>이름</dt>
+				<dd>김태희</dd>
+			</dl>
+			`
+			<dl>
+				<dt>학과</dt>
+				<dd>전자과</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

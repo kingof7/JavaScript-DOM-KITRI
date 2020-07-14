@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#createform {
+	border: solid 2px black;
+	width: 400px;
+	height: 350px;
+	font-size: 10px;
+	border-left: solid 2px black;			
+	}	
+	
+	#createform .id{
+	border-bottom: solid 2px black;	
+	height: 27px;	
+	}
+	
+	#createform .button{
+	display:block;
+	text-align: center;
+	}
+	
+	#createform label {
+	display:inline-block;
+	border-right:solid 2px;
+	width: 100px;
+	padding-top: 8px;	
+	padding-bottom: 8px;	
+	}
+	
+	#createform .button{
+	margin-top: 3px;
+	}
+</style>
+</head>
+<body>
+	<div id="title">
+		<div style="margin-left: 150px; font-size: 9px;"><b>회원가입(*필수입력사항입니다.)</b></div>
+	</div>	
+	<div id="createform">			
+			<form action="서버주소" method="post">			
+					<div class="id">
+						<label>아이디</label>
+						*<input type="text" name="id" size="10"/>
+						<input type="submit" value="아이디중복확인">
+					</div>
+				
+				<div class="id">
+					<label>비밀번호</label>					
+					*<input type="text" name="id" size="10"/>
+				</div>
+				<div class="id">
+					<label>비밀번호확인</label>					
+					*<input type="text" name="id" size="10"/>
+				</div>				
+				<div class="id">
+					<label>이름</label>					
+					*<input type="text" name="id" size="10"/>
+				</div>
+				<div class="id">
+					<label>주민번호</label>					
+					*<input type="text" name="id" size="10"/>
+					<input type="text" name="id" size="10"/>
+				</div>
+				<div class="id">
+					<label>이메일</label>				
+					<input type="text" name="id" size="13"/>
+					
+				</div>
+					
+				<div class="id">
+					<label>우편번호</label>									
+					<input type="text" name="id" size="10"/>
+					<input type="submit" value="우편번호검색">
+				</div>
+				
+				<div class="id">
+					<label>주소</label>					
+					<input type="text" name="id" size="30"/>				
+				</div>
+				<div class="id">
+					<label>직업</label>					
+					<select name="jobs">
+						<option value="판사">판사</option>
+						<option value="검사">검사</option>
+						<option value="의사">의사</option>
+						<option value="변호사">변호사</option>
+					</select>				
+				</div>
+				<div class="id">
+					<label>메일수신</label>					
+					<input type="radio" name="yes" value="yes"/>yes				
+					<input type="radio" name="yes" value="no"/>no									
+				</div>
+				<div class="id">
+					<label>관심분야</label>					
+					<input type="checkbox" name="경제" value="경제"/>경제					
+					<input type="checkbox" name="IT" value="IT"/>IT					
+					<input type="checkbox" name="음악" value="음악"/>음악
+					<input type="checkbox" name="예술" value="예술"/>예술									
+				</div>
+				
+				<div class="button">
+					<input type="submit" value="가입">
+					<input type="reset" value="취소">
+				</div>				
+			</form>			
+	</div>	
+</body>
+</html>

@@ -1,0 +1,701 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'fontawesome';
+	src: url('../lib/fonts/fontawesome.eot?14663396#iefix')
+		format('embedded-opentype'),
+		url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+		url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+		url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+	font-style: normal;
+}
+
+.w3-right {
+	font-family: "Segoe UI", Arial, sans-serif;
+	letter-spacing: 4px;
+	float: right;
+	line-height: 59px;
+	padding-right: 20px;
+	font-size: 15px;
+	border: 0px solid red;
+	position: relative;
+	top: 5px;
+}
+
+.w3-bar-item {
+	padding: 16px;
+}
+
+.w3-bar-item .fa {
+	font-size: 20px;
+}
+
+.menu {
+	border: 0px solid blue;
+	color: #fff !important;
+	background-color: #4CAF50 !important;
+	overflow: hidden;
+}
+
+.menu li {
+	padding: 16px;
+}
+
+.menu ul li {
+	padding: 15px;
+}
+
+header {
+	width: 100%;
+	border: 0px solid blue;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+}
+
+#header_nav {
+	width: 100%;
+	overflow: hidden;
+}
+
+#header_nav .menu li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	padding: 16px;
+	font-size: 17px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	letter-spacing: 4px;
+	border: 0px solid red;
+}
+
+#content {
+	border: 0px solid blue;
+	overflow: hidden;
+	width: 100%;
+}
+
+#content .nav {
+	border: 0px solid red;
+	width: 229px;
+	float: left;
+	height: 5000px;
+	padding: -1px 16px;
+	z-index: 3;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+	position: absolute;
+}
+
+#content .nav>h4 {
+	margin-top: 16px !important;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+	font-size: 20px;
+	padding-left: 16px;
+	display: block;
+	color: #000 !important;
+}
+
+#content .nav>div {
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	display: block;
+	float: none;
+	outline: 0;
+	text-align: left;
+	border: none;
+	vertical-align: middle;
+	white-space: normal;
+	overflow: hidden;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0px 16px;
+	width: 86%;
+}
+
+#content .nav>div:hover {
+	background-color: #A9A9A9;
+}
+
+#header_nav .nav li {
+	float: left;
+}
+
+#header_nav>.list li {
+	float: left;
+	margin-right: 20px;
+	line-height: 20px;
+}
+
+#content>.nav>div:nth-child(1) ~ div {
+	font-family: "Segoe UI", Arial, sans-serif;
+	padding: 0px 16px;
+}
+
+#display {
+	
+	border: 0px solid blue;
+	overflow: hidden;
+	margin-left: 230px !important;
+}
+
+#html_exam>.html1 {
+	padding: 3%;
+	text-align: center;
+	display: block;
+	float: left;
+	line-height: 1.5;
+	box-sizing: inherit;
+	text-align: center !important;
+	margin-right: 30px;
+	width: 44.9%;
+}
+
+#html_exam>.html1 .h1 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	color: #555555;
+	margin: 2px 0 -20px 0 !important;
+	font-size: 80px !important;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+#html_exam>.html1 .p {
+	color: #3a3a3a !important;
+	font-size: 24px !important;
+	font-family: Verdana, sans-serif;
+	line-height: 1.5;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+#html_exam>.html1 .a {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+#html_exam>.html1 .a:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+#html_exam>.html2 {
+	width: 37%;
+	margin: 40px;
+	margin-left: 50px;
+	overflow: hidden;
+	padding: 15px;
+	background-color: #f1f1f1 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+										rgba(0, 0, 0, 0.12);
+	height: 390px;
+	
+}
+#html_exam>.html2 h3{
+	font-family: "Segoe UI",Arial,sans-serif; font-weight: 400; margin: 15px 0; font-size:24px;
+}
+
+#html_exam> .html2 .html_box {
+	background-color: #fff !important;
+	height: 250px;
+	font-family: Consolas, "courier new";
+	font-size: 16px;
+	line-height: 1.5;
+	border-left: 4px solid #4CAF50 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+	padding-top: 10px;
+}
+
+#html_exam> .html2 .html_box span {	
+	margin-left: 5px;
+}
+
+.sql_exam .sql2 {
+	padding: 3%;
+	width: 37.99999%;
+	display: block;
+	float: left;
+	box-sizing: inherit;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+#css_exam{
+	background-color: #f1f1f1 !important;
+	border: 0px solid blue;  overflow:hidden;
+	
+}
+.css1 {
+	border: 1px solid red;
+	font-family: "Segoe UI", Arial, sans-serif;
+	display: block;
+	float: left;
+	width: 400px;
+}
+.css1 h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0; font-size: 24px;
+}
+.css_box{
+	background-color: #fff !important;
+	height: 345px;
+	font-family: Consolas, "courier new";
+	font-size: 16px;
+	line-height: 1.5;
+	border-left: 4px solid #4CAF50 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+		
+}
+
+#css_exam> .css2{
+	text-align: center;
+}
+
+#css_exam> .css2 h1 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	color: #555555;
+	margin: 2px 0 -20px 0 !important;
+	font-size: 80px !important;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+#css_exam> .css2 p {
+	color: #3a3a3a !important;
+	font-size: 24px !important;
+	font-family: Verdana, sans-serif;
+	line-height: 1.5;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+#css_exam> .css2 a {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#css_exam> .css2 a:hover {
+   color: #000!important;
+   background-color: #ccc!important;
+
+}
+
+#js_exam {
+	content: "";
+	display: table;
+	clear: both;
+	box-sizing: inherit;
+	overflow: hidden;
+	width: 100%;
+}
+
+.js_box {
+	background-color: #fff !important;
+	height: 200px;
+	font-family: Consolas, "courier new";
+	font-size: 16px;
+	line-height: 1.5;
+	border-left: 4px solid #4CAF50 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+	padding-top: 20px;
+    padding-left: 20px;
+    
+}
+
+#js_exam .js1 {
+	padding: 5%;
+	width: 35.9%;
+	text-align: center;
+	display: block;
+	float: left;
+	line-height: 1.5;
+	box-sizing: inherit;
+	text-align: center !important;
+	margin-left: 50px;
+}
+
+#js_exam .js1>h1 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	color: #555555;
+	margin: 2px 0 -20px 0 !important;
+	font-size: 64px !important;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+#js_exam .js1>p {
+	color: #3a3a3a !important;
+	font-size: 24px !important;
+	font-family: Verdana, sans-serif;
+	line-height: 1.5;
+}
+
+#js_exam .js1>input:hover {
+	color: #000 !important;
+	background-color: #ccc !important;
+	outline-width: 0;
+}
+
+#js_exam .js1>input {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	user-select: none;
+	display: inline-block;
+	border: none;
+	padding: 8px 16px;
+	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#js_exam .js1 .js_learn {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#js_exam .js2 {
+	margin: 15px 30px;
+	width: 45.99999%;
+	display: block;
+	float: left;
+	box-sizing: inherit;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	overflow: hidden;
+	width: 600px;
+}
+
+#js_exam .js2>div>h3 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+	font-size: 24px;
+}
+
+#js_exam .js2 .js_box {
+	height: 240px;
+	width: 550px;
+}
+
+.sql_exam {
+	overflow: hidden;
+	color: #000 !important;
+	background-color: #f1f1f1 !important;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+}
+
+.sql_exam .sql1 {
+	padding: 3%;
+	width: 43.99999%;
+	display: block;
+	float: left;
+	box-sizing: inherit;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+.sql1>h3 {
+	font-weight: 400;
+	margin: 10px 0;
+	font-size: 24px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.sql1 .sql_box {
+	background-color: #fff !important;
+	height: 200px;
+	font-family: Consolas, "courier new";
+	font-size: 16px;
+	line-height: 1.5;
+	border-left: 4px solid #4CAF50 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+}
+
+.sql_exam .sql2 {
+	padding: 3%;
+	width: 37.99999%;
+	display: block;
+	float: left;
+	box-sizing: inherit;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	overflow: hidden;
+	text-align: center;
+}
+
+.sql2 > h1 {
+	font-size: 80px;
+	font-weight: 400;
+    color: #555555;
+    margin: 2px 0 -20px 0 !important;
+}
+
+.sql2 > p {
+    font-size: 24px!important;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.sql2 > a {
+	margin: 5px 5px 5px 0;
+    font-size: 16px;    
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+   	color: #fff!important;
+    background-color: #616161!important;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;    
+    
+}
+
+
+.lang {
+	margin: 0px;
+	background-color: #616161 !important;
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
+	border: 0px solid red;
+	overflow: hidden;
+}
+
+.lang .py_box {
+	width: 45%;
+	display: block;
+	float: left;
+	padding: 2.5%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.py_box h2 {
+	font-size: 36px !important;
+	font-family: " SegoeUI", Arial, sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.py_box input {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.py_box input:hover {
+	color: #000 !important;
+	background-color: #fff !important;
+}
+
+.picker {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+.picker>div {
+	text-align: center;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.picker .w3 {
+	padding: 2%;
+	width: 28%;
+	display: block;
+	float: left;
+}
+
+.w3 input {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.exercises {
+	color: #fff !important;
+	background-color: #616161 !important;
+	overflow: hidden;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-family: "Segoe UI", Arial, sans-serif;
+	margin: 10px 0;
+}
+
+.exer1>p {
+	width: 250px;
+	color: #fff !important;
+	background-color: #4CAF50 !important;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 25px 5px;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 16px;
+	display: inline-block;	
+}
+
+.exer2>p {
+	width: 83px;
+	color: #fff !important;
+	background-color: #4CAF50 !important;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 16px;
+	margin: 0px 5px;
+	display: inline-block;	
+}
+
+.templates {
+	color: #000 !important;
+	background-color: #f1f1f1 !important;
+	overflow: hidden;
+	text-align: center;
+}
+
+.templates>p>a {
+	color: #fff !important;
+	background-color: #616161 !important;
+	padding: 12px 24px !important;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.how_section {
+	overflow: hidden;
+	text-align: center;
+	color: black;
+	background-color: #fff !important;
+	overflow: hidden;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-family: "Segoe UI", Arial, sans-serif;
+	margin: 10px 0;
+}
+
+
+.f_button {
+	border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}

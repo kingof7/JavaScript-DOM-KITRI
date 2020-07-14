@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>스타일 시트 예제</title>
+	
+	<style>
+		body{
+		/*body입장에서 html이 마진이기때문에!!!!, body안에 html이 있다*/
+		/*	margin-top: 0px; 
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;*/
+		/*
+			margin: 2px;
+			margin: 2px 3px 4px 5px;*/
+			/*margin: 10px 5px;   위 오 아래 왼*/ 
+			margin: 10px 5px 7px; /*위 왼/오 아래*/
+		}
+		
+		div{
+			border: solid 1px red;
+			width: 350px;
+			height: 50px;
+			margin-top: 10px; /*포지션때문에 AA BB CC 와 가 나 다가 겹쳐야하는데, 겹치지 않는다*/
+			margin-left: 50px;
+			/*position : static(기본값) : 순차적으로 쌓인다는 뜻*/
+			text-align: right;	
+		}
+		
+		#hangul > font, #alphabet > span {
+			border: solid 1px blue;
+			display: block;
+			width: 90px;
+			height: 27px;			
+			float: left;
+			
+			padding-top: 7px;	/*패딩은 가급적안쓰는데, 부모 태그의 border도 같이 늘어나기 때문이다, 지금은 맞춰준상태
+								글꼴(16) +  padding(7) = height(23) + 4*/
+			padding-left: 10px;
+									 
+		}
+		
+		#hangul {			
+			margin-left: 500px;
+		}
+		#hangul > font{
+			margin-top: 9px;
+			border-left-width: 0px;		
+		}
+		
+		#alphabet > span {
+			margin-top: 9px;
+			border-left-width: 0px;
+		}
+	</style>
+	</head>
+	<body> <!-- 마진 -->
+		<div id="hangul">	
+			<font>가</font><!-- 패딩 -->
+			<font style="border-left-width: 0px;">나</font>
+			<font style="border-left-width: 0px;">다</font>
+		</div>
+		<br/><br/>
+		
+		<div id="alphabet">
+			<span>AA</span>
+			<span style="border-left-width: 0px;">BB</span>
+			<span style="border-left-width: 0px;">CC</span>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   #content {
+      border : solid 0px blue;
+      width: 550px;
+      margin: 200px auto;
+      text-rendering: auto;
+   } 
+  
+   #content div {
+      border: solid 2px;
+      border-bottom:0px;
+   }
+   
+   #content .bottom {
+      border-bottom:solid 2px;
+      text-align:center;
+   }
+   
+   #content .c {
+      border-right: solid 2px;
+      float:left;
+      width: 100px;      
+      padding-bottom:3px;
+      text-align:center;      
+   }
+   
+   #content .title {
+      text-align:right;
+      border: 0px;
+   }
+</style>
+</head>
+<body>
+   <div id="content">
+      <div class="title">
+         <span>글목록</span>
+      </div>
+      <div id="tag">
+         <label class="c">작성자</label>
+         <input type="text" name="name" style="vertical-align:middle;">
+      </div>
+      <div id="tag">
+         <label class="c">제목</label>
+         <input type="text" name="title">
+      </div>
+      <div id="tag">
+         <label class="c">이메일</label>
+         <input type="text" name="email">
+      </div>
+      <div id="tag">
+         <label class="c" style="padding-bottom: 5px; height: 160px;">내용</label>
+         <textarea rows="10" cols="58" style="margin-top: 5px; padding-bottom: 7px;"></textarea>
+      </div>
+      <div id="tag">
+         <label class="c">비밀번호</label>
+         <input type="password" name="pass">
+      </div>
+      <div class="bottom">
+         <input type="submit" name="name" value="글쓰기">
+         <input type="reset" name="name" value="다시작성">
+         <input type="button" name="name" value="목록보기">
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	/**/
+	function text(){
+		var div = document.getElementsByTagName("div");
+		alert(div.length);
+		div[0].innerHTML="사과";
+		div[1].innerHTML="바나나";
+		div[2].innerHTML="딸기";
+		
+	}
+	
+	function sub(){
+		var span = document.getElementsByTagName("span");
+		for(var i=0;i<span.length;i++){
+			span[i].innerHTML = "apple";			
+		}		
+	}
+	
+	function fun(){
+		var font = document.getElementsByTagName("font"); // font 태그를 가져옴
+		var span = font[0].getElementsByTagName("span"); // 0번지 font태그아래에 span이 있으니
+		for(var i=0;i<span.length;i++){
+			span[i].innerHTML = "사과";
+		}
+	}
+</script>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<input type="button" value="클릭" onclick="text()"/>
+	<br/><br/>
+	
+	<font>
+		<span></span>
+		<span></span>
+		
+		<input type="button" value="span" onclick="sub()"/>
+		<input type="button" value="font-span" onclick="fun()"/>
+	</font>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 상대경로,
+		현재 있음 ./
+	-->
+	
+	<img src="bmw.png" width="650" height="350" alt="이미지 준비중"><br/> <!-- 해당 html과 같은경로 -->
+	<img src="./../img/bmw.png" width="650" height="350">
+	
+	<h3>오디오</h3>
+	<audio controls autoplay loop>
+		<source src="./../img/test/Sleep Away.mp3" type="audio/mp3">
+	</audio>
+	
+	<h3>비디오</h3>
+	<video controls autoplay loop>
+	  <source src="./../img/test/penguins.mp4" type="video/mp4"> 
+	
+	</video>
+	
+</body>
+</html>

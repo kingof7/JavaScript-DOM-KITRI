@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- GET 방식은 웹 브라우저 주소창으로 데이터 전달   ex:) address?key=value&key2=value2%key3=value3 / 255자 이내로 보내야함, 그이상은 POST방식으로
+		 POST는 웹 브라우저 헤더 부분에 데이터 전달 // 보안을 필요로 하는 데이터 --> 
+	<form action="https://www.naver.com/" method="get">
+		<span>아이디</span>
+		<input type="text" name=id"/><br><br>
+		
+		<span>비밀번호</span>
+		<input type="password" name="pwd">
+		<br><br>
+		
+		<span>이름</span>
+		<input type="text" name="irum"/>
+		<br><br>
+		<!-- submit, reset 버튼을 이벤트를 포함한다. -->
+		<input type="submit" value="전송"/> <!-- get방식으로 서버주소로 모든 데이터(id,pwd,irum)이 넘어감 -->
+		<input type="reset" value="초기화"/>
+		<br><br>
+		<!-- https://www.naver.com/?id%22%2F=vlfl0&pwd=vlfl0&irum=이종화 <---겟방식으로 보냈다 -->
+	
+	<br><br>
+	
+	<h3>페이지 이동</h3>
+	<ol>
+		<li>
+			<a href="https://www.naver.com">네이버 이동</a>
+		</li>
+		<li>
+			<a href="https://google.com?su=9&value=10">구글 이동</a>
+		</li>
+	</ol>
+	</form>
+	
+	<form action="https://www.naver.com/" method="get">
+		<span>성별</span>
+		<input type="radio" name="gender" value="남자"/>		
+		<span>남자</span>
+		<input type="radio" name="gender" value="여자"/>
+		<span>여자</span>		
+		<br><br>
+		
+		<input type="checkbox" name="fruit1" value="사과"/>
+		<span>사과</span>
+		<input type="checkbox" name="fruit2" value="바나나"/>
+		<span>바나나</span>
+		<input type="checkbox" name="fruit3" value="배"/>
+		<span>배</span>
+		<input type="checkbox" name="fruit4" value="파인애플"/>
+		<span>파인애플</span>
+		<input type="checkbox" name="fruit5" value="감자"/>
+		<br><br>
+		<input type="submit" value="전송"/>
+	</form>
+	
+		
+		
+</body> 
+</html>

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#createform {
+	border: solid 1px red;
+	width: 400px;
+	height: 250px;
+	margin: 200px auto;
+}
+
+#createform .title {
+	border: solid 1px blue;
+	width: 400px;
+	height: 250px;
+	height: 30px;
+	margin: 2px 0px;
+	text-align: center;
+}
+
+#createform .content {
+	border: solid 1px yellow;
+	width: 400px;
+	height: 180px;
+}

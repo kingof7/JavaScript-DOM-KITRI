@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	//자바스크립트의 자료형들은 모두 객체이다.
+	//var a = 10; == var a = new Number(10);
+	//1. Number 객체
+	//Number x = new Byte(20);
+	//Object y = new Byte(50);
+	var su = 10;
+	var value = new Number(20);
+	document.write(su+"<br/>"+ value + "<br/>");
+	
+	var num = 123.45678;
+	document.write(num.toFixed(3) + "<br/>");		// 123.457 (자동반올림)
+	document.write(num.toPrecision(10) + "<br/>");	//123.4567800
+	document.write(num.toPrecision(5) + "<br/>");		//123.46
+	document.write(Number.MAX_VALUE + "<br/>" + Number.MIN_VALUE + "<br/>");
+	
+	// Math 객체
+	document.write("절대값:" + Math.abs(-15) + "<br/>");
+	document.write("최대값:" + Math.max(10,15) + "<br/>");
+	document.write("최소값:" + Math.min(5,6,54,2,5,6,78,7) + "<br/>");
+	document.write("누승:" + Math.pow(2,3) + "<br/>");
+	var lotto = (Math.random(Math.random())*100)/2
+	document.write("로또번호:" + lotto.toPrecision(2) + "<br/><br/>");
+	
+	//3. String 객체 - 문자, 문자열
+	var abc="안녕하세요";
+	var xyz = new String("반가워요");
+	document.write(abc + "<br/>" + xyz + "<br/>");
+	
+	var str = "ABCEFGHIJ";
+	document.write(str.substring(6) + "<br/>"); //6번지부터 끝까지
+	document.write(str.substring(2, 8) + "<br/>"); //2번지부터 8번지 전까지
+	
+	var email = "hong@naver.com";
+	document.write(email.toLowerCase() + "<br/>");
+	document.write(email.toUpperCase() + "<br/>");
+	document.write(email.indexOf("@") + "<br/>");
+	document.write(email.charAt(2) + "<br/><br/>");
+	
+	var result="abc, def, 123";
+	var arry = result.split(",");
+	for(var i=0;i<arry.length;i++){
+		document.write(arry[i] + "<br/>");
+	}
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

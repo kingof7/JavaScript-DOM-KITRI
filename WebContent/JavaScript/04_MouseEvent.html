@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myClick(){
+		alert("myClick Function"); //BOM 객체 중 window 내장객체(생략가능) //자바로 따지면 클래스		
+	}
+	function myClick2(){
+		alert("밥머거")
+	}
+	function mySub(){
+		window.alert("mySub Function");				
+	}
+	function dlSub(){
+		window.alert("dlSub Function");
+	}
+	function bigText(obj){ //a태그가 클래스 객체처럼 넘어옴, 자료형 선언 필요 없다
+		obj.style.color="blue"; //obj.settermethod.
+		obj.style.fontSize="50px";	//자바스크립트는 대소문자구분
+		obj.style.fontFamily="궁서체";
+		obj.href="https://www.naver.com";
+	}
+	function normalText(obj){
+		obj.style.color="blue";
+		obj.style.fontSize="100px";
+		obj.style.fontFamily="맑은 고딕";
+	}
+	function apple(){
+		var value = window.prompt("원하는 숫자를 입력하세요","정수형 1~10까지만 입력하세요.");
+		if(value <= 10)
+			window.alert(++value);
+			//document.write(value); //새로운 창에 value를 뿌려줌, 동적페이지라서
+	}
+	function banana(){
+		var result = window.confirm("정말로 삭제하시겠습니까?");
+		//window.alert(result);
+		
+		if(result){
+			alert("삭제되었습니다.");
+		}else{
+			alert("삭제되지 않았습니다.");
+		}
+	}
+</script>
+</head>
+<body>
+	<!-- 마우스 이벤트: onclick(mousedown, mouseup), dbclick, mouseover, mouseout(css hover가 거의다처리)
+					 css- hover(mouseover, mouseout)  -->
+	<input type="button" value="확인하세요" onclick="myClick()"/>
+	<br><br>
+	<span onclick="myClick2()" style="cursor: pointer;">배고파</span>
+	<br/><br/>
+	
+	<input type="button" value="확인하세요." onmousedown="mySub()"/>
+	<input type="button" value="확인하세요." onmouseup="mySub()"/>
+	<input type="button" value="확인하세요." ondblclick="dlSub()"/>
+	<br><br>
+																<!-- this는 a태그 -->	
+	<a href="#" style="text-decoration: none;" onmouseover="bigText(this)" onmouseout="normalText(this)">우와~우와~~~~!@2</a>		 
+	<br><br>
+	
+	<input type="button" value="확인하세요." onclick="apple()"/>
+	<input type="button" value="확인하세요." onclick="banana()"/>
+</body>				
+
+</html>

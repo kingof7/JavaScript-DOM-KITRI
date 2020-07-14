@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OverFlow</title>
+<style type="text/css">
+	#row1{
+		width: 500px; margin: 0px auto;
+		border: 1px solid red; /*높이 생략시 자식 height에 맞춰진다. 즉, 속성으로 정의해주면 불편하다. 하고싶으면 직접 다 계산해야한다*/
+	}
+	#row1 > #first{
+		width: 100px; height: 100px;
+		margin: 5px; border: 1px solid #cccccc;
+	}
+	
+	#row1 > #second{
+		width: 100px; height: 100px;
+		margin: 5px; border: 1px solid #ccccdd;
+	}
+	#row2{
+		width: 500px; margin: 0px auto;
+		border: 1px solid blue;
+		margin-top: 5px;
+		overflow: hidden; /*넘치는 것은 잘라줌, 자식거에 맞춰줌*/
+		
+	}	
+	#row2 > #first, #row2 > #second{
+		width: 100px; height: 100px;
+		margin: 5px; border: 1px solid #cccccc;
+		float: right;
+	}
+</style>
+</head>
+<body>
+    <div id="row1">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+
+    <div id="row2">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+</body>
+</html>
