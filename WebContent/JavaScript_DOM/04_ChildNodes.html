@@ -6,52 +6,108 @@
 <script type="text/javascript">
 	function fun(){
 		var arr = new Array();
+		// div 태그를 추출
 		var div = document.getElementsByTagName("div");
+		// 첫번째 노드의 이름 - div
 		arr.push(div[0].nodeName);
-		arr.push(div[0].nodeValue); //div 자체에는 값이 없음
+		// 첫번째 노드의 값 - null (div태그 밑의 텍스트는 자식노드이다.)
+		arr.push(div[0].nodeValue);
 		arr.push("\n");
+		// 첫번째 노드의 첫번째 자식 노드의 이름 - #text
 		arr.push(div[0].childNodes[0].nodeName);
-		arr.push(div[0].childNodes[0].nodeValue); // div의 childnode는 text임 = 나는 사과를 좋아합니다.
+		// 첫번째 노드의 첫번째 자식 노드의 값. - 나는 사과를 좋아합니다.
+		arr.push(div[0].childNodes[0].nodeValue);
 		alert(arr);
-		
-		var result=document.getElementById("result");
-		result.style.color="red";
-		result.innerHTML=div[0].childNodes[0].nodeValue;
-		
+		// 요소 id가 result인 요소를 가져온다.
+		var result = document.getElementById("result");
+		// result요소의 style속성의 color값을 red로 한다.
+		result.style.color = "red";
+		result.innerHTML = div[0].childNodes[0].nodeValue;
 	}
 	
 	function sub(){
 		var arr = new Array();
 		var melon = document.getElementById("melon");
 		arr.push(melon.nodeName + "," + melon.nodeValue);
-		arr.push(melon.childNodes.length); //태그사이사이 엔터가 들어감 == 11
+		arr.push(melon.childNodes.length);
+// 		melon의 자식 길이는 7이다?
 		
-		for(var i=0;i<melon.childNodes.length;i++){
-			//arr.push(melon.childNodes[i].nodeName);
-			arr.push(melon.childNodes[i].childNodes[0].nodeValue); 줄바꿈을 자식으로 읽음
+// 		줄바꿈(엔터)를 자식으로받기때문에 주의해야한다.
+		for (var i=0; i<melon.childNodes.length; i++){
+			arr.push(melon.childNodes[i].nodeValue);
+// 			arr.push(melon.childNodes[i].childNodes[0].nodeName);
 		}
 		
-		var span=melon.getElementsByTagName("span");
-		for(var i=0;i<span.length;i++){
+		var span = melon.getElementsByTagName("span");
+		for (var i=0; i<span.length; i++){
 			arr.push(span[i].childNodes[0].nodeValue);
 		}
+		alert(arr.join("\n"));
+	}
+	function method(){
+		var arr = new Array();
+		var apple = document.getElementById("apple");
+		var appleChild = apple.childNodes;
+		// 엔터가 개입해서 자식노드를 가져오는 방법을 쓰기 모호했다.
+		// 하지만 노드 타입을 이용하여 추출하는 방법이 있다.
+		// 노드 타입 1은 태그노드, 2는 속성노드, 3은 텍스트노드이다.
+		for (var i=0; i<apple.childNodes.length; i++){
+			arr.push(appleChild[i].nodeName + "," + appleChild[i].nodeValue + "," + appleChild[i].nodeType);
+		}
+		var span = apple.getElementsByTagName("span");
+		arr.push(span[0].childNodes[0].nodeValue);
 		
-		alert(arr.join("\n"));		
+		var i = apple.getElementsByTagName("i");
+		arr.push(i[0].childNodes[0].nodeValue);
+		
+		var b = apple.getElementsByTagName("b");
+		arr.push(b[0].childNodes[0].nodeValue);
+		
+		alert(arr.join("\n"));
+		
+	}
+	
+	function tagMod(){
+		var arr = new Array();
+		var apple = document.getElementById("apple");
+		var appleChild = apple.childNodes;
+		
+		// 부모태그기준으로 손자노드의 값을 뽑을 때
+		// 줄바꿈도 자식노드로 인식하기 때문에 
+		// 노트타입을 1인 노드만 가져오게 처리를 하면
+		// 노드가 태그타입인 노드만 값을 가져오게 할 수 있다.
+		for (var i=0; i<appleChild.length; i++){
+			if (appleChild[i].nodeType == 1){
+				arr.push(appleChild[i].childNodes[0].nodeValue);
+			}
+		}
+		alert(arr.join("\n"));
 	}
 </script>
 </head>
 <body>
+<!-- 	div의 value는 그밑에 텍스트가 아니다. -->
+<!-- 	밑에의 경우 나는 사과를 좋아합니다.는 value가 아닌 자식 text이다. -->
 	<div>나는 사과를 좋아합니다.</div>
 	<div id="result"></div>
-	<br/><br/>
+	<input type="button" value="클릭" onclick="fun()"/>
+	<br><br>
 	
-	<input type="button" value="클릭" onclick="fun()">
-	<br/><br/>
-	<span id="melon">  <!-- enter도 #text로나오기 때문에 자식으로 뽑힘 -->
-		<span>가</span> <!-- nodeName=#text, nodeValue="가" -->
+	<span id="melon">
+		<span>가</span>
 		<span>나</span>
 		<span>다</span>
 	</span>
-	<input type="button" value="클릭" onclick="sub()">
+	<input type="button" value="클릭" onclick="sub()"/>
+	<br><br>
+	
+	<div id="apple">
+		<span>A</span>
+		<i>B</i>
+		<b>C</b>
+	</div>
+	<input type="button" value="클릭" onclick="method()"/>
+	<input type="button" value="클릭" onclick="tagMod()"/>
+	
 </body>
 </html>

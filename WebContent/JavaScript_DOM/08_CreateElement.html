@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	function sub(){
+		var divNode = document.createElement("div");
+		divNode.align = "center";
+		
+		var spanNode = document.createElement("span");
+		spanNode.style.color = "red";
+		spanNode.innerHTML = "안녕하세요";
+		
+		divNode.appendChild(spanNode);
+		
+		var disp = document.getElementById("disp");
+		disp.appendChild(divNode);
+		
+	}	
+</script>
+<body>
+	<input type="text" id="name">
+	<input type="button" value="클릭" onclick="sub()">
+</body>
+</html>

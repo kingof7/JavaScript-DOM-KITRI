@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function sub(){
+		var arr = new Array();
+		
+		var dauther = document.getElementById("dauther");
+		var olderBrother = dauther.previousSibling;		// 이전 형제노드를 찾는다. 이때 줄바꿈도 형제로 인식한다.
+		var youngerBrother = dauther.nextSibling;		// 다음 형제노드를 찾는다. 이때도 줄바꿈도 형제로 인식한다.
+		arr.push(olderBrother.nodeType + " " + youngerBrother.nodeType);
+		
+		alert(arr.join("\n"));
+	}
+</script>
+</head>
+<body onload="sub()">
+	<div id="grandfather">
+		<div id="father">
+			<span id="firstSon">첫째</span>
+			<span id="dauther">둘째</span>
+			<span id="secondSon">셋째</span>
+		</div>
+	</div>
+</body>
+</html>

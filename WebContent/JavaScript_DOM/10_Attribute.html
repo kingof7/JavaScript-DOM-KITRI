@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	function sub(){
+		var arr = new Array();
+		
+		var div = document.createElement("div");
+// 		div.align = "center";
+// 		div.style.color = "blue";
+
+//		element 객체도 자바와같이 setter, getter를 이용할 수 있다
+//		setter,getter를 이용한 방법
+		div.className = "abc";				// 밑에 예제와 같다.	
+		div.setAttribute("class", "abc");	// 둘다 클래스 네임을 가져오는 방법.
+		
+		div.setAttribute("align", "center");
+		div.setAttribute("style", "color:blue; font-size:77px;");
+		//div.setAttribute("onclick", "xyz()");
+		//div.setAttribute("onclick", "xyz('apple')");
+		
+		//var su = 10;
+		//div.setAttribute("onclick","xyz('"+su+"')");
+		
+		//div.onclick=xyz;
+		
+		//익명함수, 한번쓰고 버려지는 것
+		var su=10;
+		var value=20;
+		div.onclick=function(){
+		}
+			xyz(su, value);
+		
+		div.innerHTML = "안녕";
+		
+		//2번
+		arr.push(div.align);
+		arr.push(div.getAttribute("align"));
+		
+		alert(arr.join("\n"));
+		document.body.appendChild(div);
+	}
+	
+	function xyz(a, b){
+		alert("hahaha");
+		alert(a+b);
+	}
+</script>
+<body>
+	<input type="button" value="클릭" onclick="sub()">
+</body>
+</html>
